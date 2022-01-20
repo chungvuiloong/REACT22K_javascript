@@ -3,3 +3,5 @@ let student = sName;
 
 alert(student);
 alert(student);
+
+alert(student);
