@@ -8,13 +8,13 @@ from the numbers parameter it receives.
  * @param {number[]} numbers
  */
 function sumPositiveNumbers(numbers) {
-  // Filters array for positive number
+  // Filters array for positive number && push positive number into an array
 
-  let result = numbers.filter(function filterPositiveNumber(numbers) {
-    return numbers > 0;
+  let result = numbers.filter(function filterPositiveNumber(number) {
+    return number > 0;
   });
 
-  //push positive number into an array and sum it
+  //In the new array, it is sum
   const sum = result.reduce(function (a, b) {
     return a + b;
   }, 0);
