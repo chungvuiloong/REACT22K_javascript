@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
 Loop through array elements
@@ -9,7 +9,9 @@ and logs it to the console (using console.log).
  * @param {array} elements
  */
 function loopThroughElements(elements) {
-
+  return elements.forEach(function (elements) {
+    console.log(elements);
+  });
 }
 
 // Sample usage - do not modify
