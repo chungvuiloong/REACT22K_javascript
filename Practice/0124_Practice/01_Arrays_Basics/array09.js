@@ -7,11 +7,25 @@ it receives as a parameter.
 /**
  * @param {number[]} grades
  */
+
+//First Algorithm (Reduce function) WORKS
 function sumGrades(grades) {
   const sum = grades.reduce(function (a, b) {
     return a + b;
   }, 0);
 
+  return sum;
+}
+
+//Second Algorithm (For function) WORKS
+function sumGrades(grades) {
+  for (
+    var i = 0, // The iterator
+      length = grades.length, // Cache the array length
+      sum = 0; // The total amount
+    i < length; // The "for"-loop condition
+    sum += grades[i++] // Add number on each iteration
+  );
   return sum;
 }
 
