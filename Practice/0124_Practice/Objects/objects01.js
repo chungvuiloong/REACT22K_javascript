@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
 Complete the function getProductDetails such that it returns an object with the following properties:
@@ -10,9 +10,13 @@ Give these properties any value you'd like, as long as it fits the expected retu
 
 **/
 
-function getProductDetails() {
-
+function getProductDetails(ids, titles, inStocks) {
+  const productDetails = {
+    id: 2200117,
+    title: "MrJay",
+    inStock: true,
+  };
 }
 
 // Sample usage - do not modify
-console.log(getProductDetails()); // the object you define
+console.log(getProductDetails(id, title, inStock)); // the object you define

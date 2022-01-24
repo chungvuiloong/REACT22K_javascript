@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
 
@@ -12,10 +12,15 @@ These values are provided as a city parameter which is an object.
  * @param {string} city.name
  * @param {number} city.value
  */
-function getWeather(city) {
+function getWeather(cities) {
+  let city = {
+    name:,
+    value:
+  };
 
+  return `It's currently ${city.value} degrees in ${city.name}`;
 }
 
 // Sample usage - do not modify
-console.log(getWeather({name: "Amsterdam", value: 3})); // "It's currently 3 degrees in Amsterdam"
-console.log(getWeather({name: "Brasilia", value: 24})); // "It's currently 24 degrees in Brasilia"
+console.log(getWeather({ name: "Amsterdam", value: 3 })); // "It's currently 3 degrees in Amsterdam"
+console.log(getWeather({ name: "Brasilia", value: 24 })); // "It's currently 24 degrees in Brasilia"
