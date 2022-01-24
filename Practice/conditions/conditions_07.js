@@ -14,7 +14,13 @@ Bonus: Make it handle a few collective nouns like "sheep" and "geese".
 function pluralize(noun, number) {
   // If value is 0
   if (number === 0) {
-    return `no ${noun}s`;
+    if (noun == "goose") {
+      return `no geese`;
+    } else if (noun == "sheep") {
+      return `no sheep`;
+    } else {
+      return `no ${noun}s`;
+    }
   }
 
   //If value is 1
@@ -22,7 +28,7 @@ function pluralize(noun, number) {
     return `${number} ${noun}`;
   }
 
-  // If value is more than 1
+  // If value is more than 2
   else if (number > 1) {
     //If value is special, GOOSE
     if (noun == "goose") {
@@ -40,7 +46,14 @@ function pluralize(noun, number) {
     }
   }
 }
-
 console.log("I have " + pluralize("cat", 0));
 console.log("I have " + pluralize("cat", 1));
+console.log("I have " + pluralize("cat", 2));
+
+console.log("I have " + pluralize("sheep", 0));
+console.log("I have " + pluralize("sheep", 1));
 console.log("I have " + pluralize("sheep", 2));
+
+console.log("I have " + pluralize("goose", 0));
+console.log("I have " + pluralize("goose", 1));
+console.log("I have " + pluralize("goose", 2));
