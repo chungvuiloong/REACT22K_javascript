@@ -8,9 +8,9 @@ from the numbers parameter it receives.
  * @param {number[]} numbers
  */
 function sumPositiveNumbers(numbers) {
-  // Find the positive number
+  // Filters array for positive number
 
-  let result = numbers.filter(function (numbers) {
+  let result = numbers.filter(function filterPositiveNumber(numbers) {
     return numbers > 0;
   });
 
