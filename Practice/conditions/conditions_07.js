@@ -22,7 +22,7 @@ function pluralize(noun, number) {
     return `${number} ${noun}`;
   }
 
-  // If value is more than 2
+  // If value is more than 1
   else if (number > 1) {
     //If value is special, GOOSE
     if (noun == "goose") {
