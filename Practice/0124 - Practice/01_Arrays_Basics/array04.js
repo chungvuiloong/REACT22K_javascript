@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
 Complete the function such that the app variable is added to the apps array
@@ -8,8 +8,7 @@ Complete the function such that the app variable is added to the apps array
  * @param {string} app
  */
 function useApp(apps, app) {
-
-
+  return apps.push(app);
 }
 
 // Sample usage - do not modify

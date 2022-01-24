@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
 Complete the function useCalculator such that it adds the "Calculator" string to the apps array it receives.
@@ -8,7 +8,7 @@ There is a small trick in this challenge to make sure you understand an importan
  * @param {array} apps
  */
 function useCalculator(apps) {
-
+  return apps.push("Calculator");
 }
 
 // Sample usage - do not modify
