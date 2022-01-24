@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
 Complete the function getEmptyArray such that it returns an empty array.
@@ -7,9 +7,17 @@ Complete the function getEmptyArray such that it returns an empty array.
  * @param {empty}
  */
 
- function getEmptyArray() {
+// Function expression
+function getEmptyArray(emptyArray) {
+  return (emptyArray = []);
+}
 
- }
+// Function Statement
+let getEmptyArray = function getEmptyArray(emptyArray) {
+  return (emptyArray = []);
+};
 
- // Sample usage - do not modify
- console.log(getEmptyArray());
+//Arrow Function
+
+// Sample usage - do not modify
+console.log(getEmptyArray());
