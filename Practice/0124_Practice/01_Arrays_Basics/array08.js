@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
 Complete the function logUserIds such that it iterates over every item
@@ -10,7 +10,9 @@ in the userIds array it receives and logs it to the console (using console.log).
  * @param {number[]} userIds
  */
 function logUserIds(userIds) {
-
+  return userIds.forEach(function (userIds) {
+    console.log(userIds);
+  });
 }
 
 // Sample usage - do not modify
