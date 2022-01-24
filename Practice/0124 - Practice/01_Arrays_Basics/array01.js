@@ -18,6 +18,7 @@ let getEmptyArray = function getEmptyArray(emptyArray) {
 };
 
 //Arrow Function
+const getEmptyArray = () => [];
 
 // Sample usage - do not modify
 console.log(getEmptyArray());
