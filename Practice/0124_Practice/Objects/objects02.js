@@ -12,13 +12,11 @@ These values are provided as a city parameter which is an object.
  * @param {string} city.name
  * @param {number} city.value
  */
-function getWeather(cities,values) {
-  let city = {
-    name:,
-    value:
-  };
 
-  return `It's currently ${city.value} degrees in ${city.name}`;
+function getWeather(obj) {
+  let city = obj;
+
+  return `It's currently ${city.value} degrees in ${city.name}.`;
 }
 
 // Sample usage - do not modify
