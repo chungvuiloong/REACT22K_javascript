@@ -10,13 +10,15 @@ Give these properties any value you'd like, as long as it fits the expected retu
 
 **/
 
-function getProductDetails(ids, titles, inStocks) {
-  const productDetails = {
-    id: 2200117,
-    title: "MrJay",
-    inStock: true,
+function getProductDetails(id, title) {
+  const user = {
+    id: id,
+    title: title,
+    inStock: false,
   };
+
+  return user.id + " " + user.title + " " + user.inStock;
 }
 
 // Sample usage - do not modify
-console.log(getProductDetails(id, title, inStock)); // the object you define
+console.log(getProductDetails(1213, "MrJay", true)); // the object you define
