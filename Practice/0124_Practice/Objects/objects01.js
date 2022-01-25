@@ -10,11 +10,11 @@ Give these properties any value you'd like, as long as it fits the expected retu
 
 **/
 
-function getProductDetails(id, title) {
+function getProductDetails(id, title, inStock) {
   const user = {
     id: id,
     title: title,
-    inStock: false,
+    inStock: inStock,
   };
 
   return user.id + " " + user.title + " " + user.inStock;
