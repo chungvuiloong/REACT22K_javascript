@@ -13,8 +13,8 @@ These values are provided as a city parameter which is an object.
  * @param {number} city.value
  */
 
-function getWeather(obj) {
-  let city = obj;
+function getWeather(city) {
+  let city = city;
 
   return `It's currently ${city.value} degrees in ${city.name}.`;
 }
