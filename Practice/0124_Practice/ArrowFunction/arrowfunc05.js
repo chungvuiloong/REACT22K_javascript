@@ -1,14 +1,14 @@
-'use strict';
+"use strict";
 
 /**
-In this challenge, you're asked to write the triple function from scratch as an arrow function.
-The function triple receives a parameter and returns the result of multiplying it by 3.
+In this practice, you're asked to write the function from scratch as an arrow function. 
+
+The function sum receives 2 parameters and returns the result of their sum. 
+
+Feel free to add a sample usage at the end once you've written the sum function.
 **/
 
-
-function sum(){
-
-}
+sum = (a, b, result = 0) => (result = a + b);
 
 // (optional) Sample usage
 console.log(sum(2, 4));
