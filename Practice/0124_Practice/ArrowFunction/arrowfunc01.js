@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
 You've been provided with a function sum that returns the sum of the parameters a and b it receives.
@@ -11,7 +11,7 @@ Check the sample usage to see the expected result.
  * @param {number} b
  */
 function sum() {
-
+  sum = (a = 0) => a;
 }
 
 // Sample usage - do not modify
