@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
 Task 1;
@@ -7,6 +7,15 @@ What is the length of the array?
 Write a function called myAlphabetLength which console.logs the length of the array
 Within the function also use an if-conditional statement that checks if the number of items within the array are less than 5
 **/
+
+let myAlphabet = ["A", "B", "C", "D", "E", "F", "G"];
+
+const myAlphabetLength = (arr) =>
+  myAlphabet.length > 5
+    ? `It is ${myAlphabet.length}. It is more than 5`
+    : `It is ${myAlphabet.length}. Less than 5.`;
+
+console.log(myAlphabetLength(myAlphabet));
 
 /**
 Task 2;
