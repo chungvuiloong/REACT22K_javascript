@@ -18,5 +18,7 @@ const calculate = () => {
   // id.textContent = text;
   answer.textContent = text;
 
+  document.querySelector("#meter").value = `${amount}`;
+
   // document.getElementById("answer").innerHTML = answer;
 };
