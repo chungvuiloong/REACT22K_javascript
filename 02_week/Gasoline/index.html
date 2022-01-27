@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
@@ -9,16 +10,18 @@
         1) if there are more than 10 litres, 
         2) then message on the screen: "good, you can escape now", 
         3)if less, it shows the message: "Ups, you have to stay here." -->
+    <section>
+      <h3>Can you escape?</h3>
 
-    <label for="price">Price :</label>
-    <input type="number" id="price" />
+      <label for="price">Price of gasoline:</label>
+      <input type="number" id="price" />
 
-    <label for="money">Money :</label>
-    <input type="number" id="money" />
+      <label for="money">Money :</label>
+      <input type="number" id="money" />
 
-    <button onclick="calculate()">Calculate</button>
-    <p id="answer">This is answer.</p>
-
+      <button onclick="calculate()">Calculate</button>
+      <p id="answer">This is answer.</p>
+    </section>
     <script src="js.js"></script>
   </body>
 </html>

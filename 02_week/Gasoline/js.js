@@ -12,8 +12,8 @@ const calculate = () => {
   let text;
 
   amount >= 10
-    ? (text = `Your gasoline is ${}. Good, now you can escape`)
-    : (text = `Ops, you need to stay`);
+    ? (text = `You can buy ${amount} litres of gasoline. Good, popo can't catch you.`)
+    : (text = `You can buy ${amount} litres of gasoline. Ops, popo just caught you.`);
 
   answer.textContent = text;
 
