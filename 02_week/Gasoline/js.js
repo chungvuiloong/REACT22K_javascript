@@ -15,6 +15,7 @@ const calculate = () => {
     ? (text = `You can buy ${amount} litres of gasoline. Good, popo can't catch you.`)
     : (text = `You can buy ${amount} litres of gasoline. Ops, popo just caught you.`);
 
+  // id.textContent = text;
   answer.textContent = text;
 
   // document.getElementById("answer").innerHTML = answer;
