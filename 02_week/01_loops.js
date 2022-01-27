@@ -41,7 +41,39 @@ console.log(evenCount);
 
 // 5. Make a program that asks numbers from the user, until user gives 0 and then program ends. In the end program prints out average of the numbers.
 
+let numCount = -1;
+let sum = 0;
+let average = 0;
+
+do {
+  value = parseInt(prompt("Enter number "));
+
+  sum += value;
+
+  numCount++;
+
+  average = sum / numCount;
+} while (value != 0);
+
+console.log(average);
+
 // 6. Make a program that asks 25 numbers form the user. In the end program prints out average of the numbers.
+
+let numCount = -1;
+let sum = 0;
+let average = 0;
+
+do {
+  value = parseInt(prompt("Enter number "));
+
+  sum += value;
+
+  numCount++;
+
+  average = sum / numCount;
+} while (numCount != 25);
+
+console.log(average);
 
 // 7. Make a program that ask first one number from the user. After that the program asks: ”Do you want to continue giving numbers?(y/n)”. If user answers y, the program continues to ask another number. If user answers n, program ends. In the end program prints out average of the numbers.
 
