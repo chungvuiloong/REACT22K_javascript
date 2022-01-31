@@ -11,9 +11,11 @@ To avoid small typos, make sure to copy the strings (such as Celsius and the deg
 /**
  * @param {string} text
  */
-const getUnit = (txt) => {
-  txt.find("°C");
-};
+const getUnit = (txt) => txt.includes("°C" || "°F") ? `Celsius`: `Fahrenheit`: `N/A`;
+
+// Svetlana solution
+const getUnit = (text) =>
+  text.includes("°C") ? "Celsius" : text.includes("°F") ? "Fahrenheit" : "N/A";
 
 // Sample usage - do not modify
 console.log(getUnit("It is 15°C today")); // Celsius
