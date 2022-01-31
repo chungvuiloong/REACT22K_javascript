@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
 Re-write the function triple without using the keyword return.
@@ -7,10 +7,7 @@ Re-write the function triple without using the keyword return.
 /**
  * @param {number} value
  */
-function triple () {
-
-}
-
+triple = (num) => num * 3;
 
 // Sample usage - do not modify
 console.log(triple(2)); // 6

@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
 Create a function multiply that returns the product of both of its parameters without using the keyword return.
@@ -6,11 +6,8 @@ Create a function multiply that returns the product of both of its parameters wi
 /**
  * @param {number} value
  */
-function triple () {
-
-}
-
+triple = (num1, num2) => num1 * num2;
 
 // Sample usage - do not modify
-console.log(multiply(2, 4)); // 8
-console.log(multiply(3, 3)); // 9
+console.log(triple(2, 4)); // 8
+console.log(triple(3, 3)); // 9
