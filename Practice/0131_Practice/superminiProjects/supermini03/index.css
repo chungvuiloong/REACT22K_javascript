@@ -260,6 +260,11 @@ a:hover {
   border-color: var(--red);
 }
 
+#promo-code.success {
+  --green: #36f449;
+  border-color: var(--green);
+}
+
 .hint {
   color: #666;
 }
