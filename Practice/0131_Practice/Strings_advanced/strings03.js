@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
 In computer science, a slug is a string used to identify a certain item. Oftentimes, this slug is used in the URL for Search Engine Optimization and better user experience.
@@ -9,16 +9,15 @@ easy-assembly-dining-table so the URL becomes: https://example.com/item/easy-ass
 
 Complete the function getSlug() such that it returns the slug based on the text it receives, following the rules below:
 
-The slug should not be more than 15 characters. When there are more than 15 characters, ignore everything after the 15th character.
-The slug should always be in lower case.
-Space characters should be replaced by dashes (-).
+-The slug should not be more than 15 characters. 
+-When there are more than 15 characters, ignore everything after the 15th character.
+-The slug should always be in lower case.
+-Space characters should be replaced by dashes (-).
 
 /**
  * @param {string} name
  */
-const getSlug = name => {
-
-}
+getSlug = (name) => name.replaceAll(" ", "-").toLowerCase().substr(0, 15);
 
 // Sample usage - do not modify
 console.log(getSlug("IKEA table")); // "ikea-table"
