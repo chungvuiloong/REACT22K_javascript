@@ -8,8 +8,11 @@ Complete the function removeSecondApp
 /**
  * @param {array} apps
  */
-removeFirstApp = (apps) => apps.slice(1, 5);
+removeSecondApp = (apps) => {
+  apps.splice(1, 1);
+  return apps;
+};
 
-// Sample usage - do not modify
+// Sample usage
 const apps = ["Calculator", "Whatsapp", "Chrome", "Firefox"];
-console.log(removeFirstApp(apps)); // ["Whatsapp", "Chrome", "Firefox"]
+console.log(removeSecondApp(apps)); // ["Calculator", "Chrome", "Firefox"]
