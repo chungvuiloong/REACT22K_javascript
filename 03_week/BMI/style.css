@@ -1,0 +1,17 @@
+input {
+  border: 1px dotted black;
+  padding: 20px;
+}
+
+body {
+  background-image: linear-gradient(
+    to right,
+    red,
+    yellow,
+    orange,
+    green,
+    blue,
+    purple
+  );
+  background-repeat: no-repeat;
+}
