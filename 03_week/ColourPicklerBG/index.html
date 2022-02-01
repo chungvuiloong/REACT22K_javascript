@@ -8,31 +8,28 @@
     <h1>BG Gradient Generator</h1>
 
     <form>
-      <input
-        class="color1"
-        type="color"
-        name="color"
-        id="color"
-        value="#FF5733"
-      />
-      <input
-        class="color2"
-        type="color"
-        name="color"
-        id="color"
-        value="#FF5733"
-      />
+      <div>
+        <input class="color1" type="color" name="color" id="color1" />
+        <input class="color2" type="color" name="color" id="color2" />
+      </div>
 
-      <input type="radio" name="position" value="to top" id="direction" />
-      <label>Top to bottom</label>
-      <input type="radio" name="position" value="to right" id="direction" />
-      <label>Right to left</label>
-      <input type="radio" name="position" value="to bottom" id="direction" />
-      <label>Bottom to top</label>
-      <input type="radio" name="position" value="to left" id="direction" />
-      <label>Left to right</label>
+      <div>
+        <input type="radio" name="direction" value="to top" id="top" />
+        <label>Top to bottom</label>
+        <input type="radio" name="direction" value="to right" id="right" />
+        <label>Right to left</label>
+        <input type="radio" name="direction" value="to bottom" id="bottom" />
+        <label>Bottom to top</label>
+        <input type="radio" name="direction" value="to left" id="left" />
+        <label>Left to right</label>
+      </div>
     </form>
 
-    <link rel="stylesheet" href="js.js" />
+    <button onclick="direction()">Left to right</button>
+    <button onclick="direction()">Top to bottom</button>
+    <button onclick="direction()">Right to left</button>
+    <button onclick="direction()">Bottom to top</button>
+
+    <script src="javascript.js"></script>
   </body>
 </html>
