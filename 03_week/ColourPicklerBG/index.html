@@ -6,16 +6,32 @@
   </head>
   <body>
     <h1>BG Gradient Generator</h1>
-    <input type="radio" name="position" value="top" />
-    <label>Top to bottom</label>
-    <input type="radio" name="position" value="right" />
-    <label>Right to left</label>
-    <input type="radio" name="position" value="bottom" />
-    <label>Bottom to top</label>
-    <input type="radio" name="position" value="left" />
-    <label>Left to right</label>
 
-    <input type="color" name="color" id="color" />
+    <form>
+      <input
+        class="color1"
+        type="color"
+        name="color"
+        id="color"
+        value="#FF5733"
+      />
+      <input
+        class="color2"
+        type="color"
+        name="color"
+        id="color"
+        value="#FF5733"
+      />
+
+      <input type="radio" name="position" value="to top" id="direction" />
+      <label>Top to bottom</label>
+      <input type="radio" name="position" value="to right" id="direction" />
+      <label>Right to left</label>
+      <input type="radio" name="position" value="to bottom" id="direction" />
+      <label>Bottom to top</label>
+      <input type="radio" name="position" value="to left" id="direction" />
+      <label>Left to right</label>
+    </form>
 
     <link rel="stylesheet" href="js.js" />
   </body>
