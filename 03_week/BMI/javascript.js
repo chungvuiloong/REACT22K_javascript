@@ -37,4 +37,7 @@ calculateBMI = () => {
   } else {
     diagnosis = `Something is wrong`;
   }
+
+  document.querySelector("#answer").textContent = diagnosis;
+  console.log(result, diagnosis);
 };
