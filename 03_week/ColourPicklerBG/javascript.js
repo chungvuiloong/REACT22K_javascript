@@ -1,16 +1,14 @@
 let form = document.querySelector("form");
+let section = document.querySelector("button");
 
 let color1 = document.querySelector(".color1");
 let color2 = document.querySelector(".color2");
 
-let up = document.querySelector("#top");
-let right = document.querySelector("#right");
-let bottom = document.querySelector("#bottom");
-let left = document.querySelector("#left");
-let direction;
-
 // let direction = document.querySelectorAll('input[name="direction"]');
 
+let direction = document.querySelectorAll(".direction1.direction2");
+
+// Margits solution
 // const setGradient = () => {
 //   console.log(color1.value);
 //   console.log(color2.value);
@@ -28,11 +26,16 @@ let direction;
 //   document.body.style.backgroundImage = `linear-gradient(${selectedValue},${color1.value},${color2.value})`;
 // };
 
-const setGradient = () => {
-  console.log(color1.value);
-  console.log(color2.value);
+// form.addEventListener("change", setGradient);
 
-  document.body.style.backgroundImage = `linear-gradient(${direction},${color1.value},${color2.value})`;
-};
+// Click Counter
+let clicks = 0;
+document.addEventListener("click", (event) => {
+  clicks++;
 
-form.addEventListener("change", setGradient);
+  if (clicks > 1) {
+    console.log(` ${clicks} clicks` + direction.value);
+  } else {
+    console.log(` ${clicks} click` + direction.value);
+  }
+});

@@ -8,27 +8,110 @@
     <h1>BG Gradient Generator</h1>
 
     <form>
-      <div>
-        <input class="color1" type="color" name="color" id="color1" />
-        <input class="color2" type="color" name="color" id="color2" />
-      </div>
+      <!-- Side Navbar -->
+      <section>
+        <div class="navCont">
+          <div></div>
+        </div>
+      </section>
 
-      <div>
-        <input type="radio" name="direction" value="to top" id="top" />
-        <label>Top to bottom</label>
+      <!-- Colour Picker -->
+      <section>
+        <input
+          class="color1"
+          type="color"
+          name="color"
+          id="color1"
+          value="#ADD8E6"
+        />
+        <input
+          class="color2"
+          type="color"
+          name="color"
+          id="color2"
+          value="#ffcccb"
+        />
+      </section>
+
+ 
+        <!-- TESTER Left -->
+        <section>
+        <div>
+          <button type="button" name="direction" value="to top left" id="topLeft" class="direction1">
+          <label><i class="arrow topLeft"></i></label></button>
+          <button type="button" value="to top"><label><i class="arrow top"></i></label></button>
+          <button type="button" value="to topRight"><label><i class="arrow topRight"></i></label></button>
+        </div>
+
+        <div>
+          <button type="button"><label><i class="arrow left"></i></label></button>
+          <button type="button"></button>
+          <button type="button"><label><i class="arrow right"></i></label></button>
+        </div>
+
+        <div>
+            <button type="button"><label><i class="arrow bottomLeft"></i></label></button>
+            <button type="button"><label><i class="arrow down"></i></label></button>
+            <button type="button"><label><i class="arrow bottomRight"></i></label></button>
+        </div>
+
+        </section>
+        
+        <!-- Top Left -->
+        <input type="radio" name="direction" value="to top left" id="topLeft" />
+        <label><i class="arrow topLeft"></i></label>
+
+        <!-- Top -->
+        <input
+          type="radio"
+          name="direction"
+          value="to top"
+          id="top"
+        />
+        <label><i class="arrow top"></i></label>
+
+        <!-- Top Right -->
+        <input
+          type="radio"
+          name="direction"
+          value="to top right"
+          id="topRight"
+        />
+        <label><i class="arrow topRight"></i></label>
+
+        <!-- Right -->
         <input type="radio" name="direction" value="to right" id="right" />
-        <label>Right to left</label>
+        <label><i class="arrow right"></i></label>
+
+        <!-- Bottom Right -->
+        <input
+          type="radio"
+          name="direction"
+          value="to bottom right"
+          id="bottomLeft"
+        />
+        <label><i class="arrow bottomRight"></i></label>
+
+        <!-- Down -->
         <input type="radio" name="direction" value="to bottom" id="bottom" />
-        <label>Bottom to top</label>
+        <label><i class="arrow down"></i></label>
+
+        <!-- Bottom Left -->
+        <input
+          type="radio"
+          name="direction"
+          value="to bottom left"
+          id="bottomLeft"
+        />
+        <label><i class="arrow bottomLeft"></i></label>
+
+        <!-- Left -->
         <input type="radio" name="direction" value="to left" id="left" />
-        <label>Left to right</label>
+        <label><i class="arrow left"></i></label>
+
+        <!-- diagonal -->
       </div>
     </form>
-
-    <button onclick="direction()">Left to right</button>
-    <button onclick="direction()">Top to bottom</button>
-    <button onclick="direction()">Right to left</button>
-    <button onclick="direction()">Bottom to top</button>
 
     <script src="javascript.js"></script>
   </body>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <section id="contactMe">
+      <div class="contactDetails">
+        <div class="contactDetailsContainer">
+          <h1>Sign Up</h1>
+          <p>Its free and only takes a minute</p>
+
+          <!--Contact form details-->
+          <form class="formContainer">
+              <div class="col">
+                <label for="fname">First Name</label>
+                <input
+                  type="text"
+                  id="fName"
+                  onblur="firstNameCheck()"
+                  name="firstName"
+                />
+
+                <label for="lname">Last Name</label>
+                <input
+                  type="text"
+                  id="lName"
+                  onblur="lastNameCheck()"
+                  name="lastName"
+                />
+                
+
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+          
+                />
+
+                <label for="password">Password</label>
+                <input
+                  type="text"
+                  id="password"
+                  name="password"
+                />
+
+                <label for="cPassword">Confirm Password</label>
+                <input
+                  type="text"
+                  id="cPassword"
+                  name="cPassword"
+                />
+              </div>
+
+                    <center>
+                        <input type="submit" value="SIGN UP"/>
+                        <p>My clicking the Sign Up button, you are to</p>
+                        <p>our Terms & Conditions and Privacy Policy</p>
+                        <p class="unique">Already have an account? Login Here</p>
+                    </center>          
+              </div>
+              
+        
+
+            
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
