@@ -2,6 +2,9 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
     <title>Document</title>
   </head>
 
@@ -9,21 +12,22 @@
     <section id="contactMe">
       <div class="contactDetails">
         <div class="contactDetailsContainer">
-          <h1>Sign Up</h1>
-          <p>Its free and only takes a minute</p>
+          <div class="title">Sign Up</div>
+          <p>It's free and only takes a minute</p>
 
           <!--Contact form details-->
           <form class="formContainer">
               <div class="col">
-                <label for="fname">First Name</label>
-                <input
-                  type="text"
-                  id="fName"
-                  onblur="firstNameCheck()"
-                  name="firstName"
-                />
-
-                <label for="lname">Last Name</label>
+                <div>
+                    <label for="fname" class="fName">First name</label>
+                    <input
+                    type="text"
+                    id="fName"
+                    onblur="firstNameCheck()"
+                    name="firstName"
+                    />
+                </div>
+                <label for="lname">Last name</label>
                 <input
                   type="text"
                   id="lName"
@@ -55,12 +59,16 @@
                 />
               </div>
 
-                    <center>
+                    <div class="submit">
                         <input type="submit" value="SIGN UP"/>
-                        <p>My clicking the Sign Up button, you are to</p>
-                        <p>our Terms & Conditions and Privacy Policy</p>
-                        <p class="unique">Already have an account? Login Here</p>
-                    </center>          
+                    </div>
+                  
+                    <div class="lowerText">
+                        <p >My clicking the Sign Up button, you agree to</p>
+                        <p>our <a href="#" style="text-decoration: none;">Terms & Conditions</a> and <a href="#" style="text-decoration: none;">Privacy Policy</a></p>
+                    </div>
+
+                    <p class="unique">Already have an account? <a href="#" style="text-decoration: none;">Login Here</a></p>        
               </div>
               
         
