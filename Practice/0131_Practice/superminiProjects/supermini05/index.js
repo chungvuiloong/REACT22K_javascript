@@ -82,7 +82,6 @@ function render(grades) {
     <td>${isTestTooEasy(grades)}</td>
     <td>${gradeExists(grades, Number.parseInt(gradeToCheck.value, 10))}</td>
     <td>${exportCSV(grades)}</td>
-    <td>${sum(grades)}</td>
     </tr>`;
 }
 
