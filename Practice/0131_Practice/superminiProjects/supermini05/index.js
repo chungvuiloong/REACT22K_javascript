@@ -55,11 +55,7 @@ function sum(grades) {
 }
 
 function average(grades) {
-  let sum = grades.reduce((total, currentValue) => {
-    return total + currentValue;
-  });
-
-  return sum / grades.length;
+  return sum(grades) / grades.length;
 }
 
 //
