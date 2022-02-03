@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
 Complete the function getFullName such that it returns the full name from the user object when it exists.
@@ -7,11 +7,11 @@ Complete the function getFullName such that it returns the full name from the us
  * @param {object} [user.info]
  * @param {last} [user.info.name]
  */
-const getFullName = user => {
+const getFullName = (user) => user.info?.name;
 
-}
+//   if (user.info?.name) console.log(user.info?.name);
 
 // Sample usage - do not modify
-console.log(getFullName({info: {name: "Sam"}})); // "Sam"
-console.log(getFullName({info: null})); // undefined
+console.log(getFullName({ info: { name: "Sam" } })); // "Sam"
+console.log(getFullName({ info: null })); // undefined
 console.log(getFullName({})); // undefined
