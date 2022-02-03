@@ -48,6 +48,20 @@ function exportCSV(grades) {
   return grades;
 }
 
+function sum(grades) {
+  return grades.reduce((total, currentValue) => {
+    return total + currentValue;
+  });
+}
+
+function average(grades) {
+  let sum = grades.reduce((total, currentValue) => {
+    return total + currentValue;
+  });
+
+  return sum / grades.length;
+}
+
 //
 // Sample usage do not modify below this line
 let gradesForm = document.querySelector("#grades-form");
@@ -63,6 +77,8 @@ function render(grades) {
     <td>${getNumberOfGrades(grades)}</td>
     <td>${getFirstGrade(grades)}</td>
     <td>${getLastGrade(grades)}</td>
+    <td>${sum(grades)}</td>
+    <td>${average(grades)}</td>
     </tr>`;
 
   let tbody2 = document.querySelector("#stats-table2 tbody");
@@ -70,6 +86,7 @@ function render(grades) {
     <td>${isTestTooEasy(grades)}</td>
     <td>${gradeExists(grades, Number.parseInt(gradeToCheck.value, 10))}</td>
     <td>${exportCSV(grades)}</td>
+    <td>${sum(grades)}</td>
     </tr>`;
 }
 
