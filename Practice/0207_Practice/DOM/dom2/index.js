@@ -3,7 +3,7 @@ const getNavbarElement = () => {
 };
 
 const getMainElement = () => {
-  return document.querySelector("body");
+  return document.querySelector("");
 };
 
 const getAboutFromFooter = () => {
