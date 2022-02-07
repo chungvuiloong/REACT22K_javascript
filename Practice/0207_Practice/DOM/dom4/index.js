@@ -1,9 +1,8 @@
 /**
  * @param {string} cssSelector
  */
-const getTextFromSelector = cssSelector => {
-
-}
+const getTextFromSelector = (cssSelector) =>
+  document.querySelector(cssSelector)?.textContent ?? "undefined";
 
 // Sample usage - do not modify
 console.log(getTextFromSelector("h1")); // "First human lands on Mars!"
