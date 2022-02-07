@@ -1,5 +1,5 @@
 const getSelectedCurrency = () => {
-  return document.querySelector(".cards .active").textContent;
+  return document.querySelector(".active").textContent;
 };
 
 document.querySelectorAll(".cards .card").forEach((card) => {
