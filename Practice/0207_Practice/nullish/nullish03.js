@@ -10,9 +10,7 @@ Take a look at the sample usage to understand the structure of the object that t
  * @param {object} [user.info]
  * @param {last} [user.info.name]
  */
-const getFullName = (user) => {
-  return user?.info?.name ?? "N/A";
-};
+const getFullName = (user) => user?.info?.name ?? "N/A";
 
 // Sample usage - do not modify
 console.log(getFullName({ info: { name: "Sam" } })); // "Sam"
