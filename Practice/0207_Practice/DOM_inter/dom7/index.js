@@ -1,18 +1,14 @@
 const getDivElements = () => {
-    // TODO: return all the div elements
-
-}
+  return document.querySelector("div").textContent;
+};
 
 const getFooterLinks = () => {
-    // TODO: return all the links that are in the footer-wrapper
-
-}
+  return document.querySelector("#footer-wrapper").textContent;
+};
 
 const getAboutLinks = () => {
-    // TODO: return all the links that point to the About Us page
-
-}
-
+  return document.querySelectorAll("a.about").textContent;
+};
 
 // Sample usage - do not modify
 console.log(getDivElements());
