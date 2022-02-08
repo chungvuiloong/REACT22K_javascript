@@ -1,6 +1,6 @@
 const getFullName = () => {
-
-}
+  return `${firstName.value} ${lastName.value}`;
+};
 
 // Sample usage - do not modify
 const fullName = document.querySelector("#full-name");
@@ -8,7 +8,7 @@ const firstName = document.querySelector("#first-name");
 const lastName = document.querySelector("#last-name");
 
 const updateFullName = () => {
-    fullName.textContent = getFullName();
-}
+  fullName.textContent = getFullName();
+};
 firstName.addEventListener("keyup", () => updateFullName());
 lastName.addEventListener("keyup", () => updateFullName());
