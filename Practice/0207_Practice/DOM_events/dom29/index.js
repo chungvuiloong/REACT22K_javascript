@@ -4,12 +4,13 @@
 
 // currencyButtons.forEach((currencyButton) => {
 //   currencyButton.addEventListener("click", (event) => {
-//     // console.log(currencyButton.textContent);
-//     // currencyButton?.classList?.contains("active").remove("active");
-//     // currencyButton?.classList?.toggle("active");
+//     console.log(currencyButton.textContent);
+
+//     currencyButton.currentTarget.toggle("active");
 //   });
 // });
 
+// correct algorithm
 const buttons = document.querySelectorAll(".card");
 
 buttons.forEach((button) => {
