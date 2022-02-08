@@ -2,9 +2,7 @@
  * @param {string} name
  */
 const setWelcomeMessage = (name) => {
-  const nameSelector = document.querySelector("#name");
-  const message = `Hello <strong> ${name} </strong>`;
-  return (nameSelector.innerHTML = message);
+  return (document.querySelector("#welcome-message").textContent = name);
 };
 
 // Sample usage - do not modify
