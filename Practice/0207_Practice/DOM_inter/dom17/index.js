@@ -1,6 +1,7 @@
 const emptyUserName = () => {
-  const value = document.querySelector("user-name").value;
-  return value;
+  const arrNames = [];
+  const value = arrNames.push(document.querySelector("#user-name").value);
+  return arrNames;
 };
 
 // Sample usage - do not modify
