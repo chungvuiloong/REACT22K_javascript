@@ -2,10 +2,6 @@
 
 let darkButton = document.querySelector("#theme-btn");
 
-darkButton.addEventListener("click", () => {
-  document.querySelector("html").classList.add("dark");
+darkButton.addEventListener("click", (event) => {
+  document.querySelector("html").classList.toggle("dark");
 });
-
-// darkButton.addEventListener("click", () => {
-//   document.querySelector("html").classList.remove("dark");
-// });
