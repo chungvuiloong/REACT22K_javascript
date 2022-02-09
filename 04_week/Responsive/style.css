@@ -1,0 +1,55 @@
+body {
+  background-color: red;
+}
+
+h1::after {
+  content: "Red";
+}
+
+@media only screen and (max-width: 1800px) {
+  body {
+    background-color: orange;
+  }
+  h1::after {
+    content: "Orange";
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  body {
+    background-color: yellow;
+  }
+
+  h1::after {
+    content: "Yellow";
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    background-color: blue;
+  }
+
+  h1::after {
+    content: "Blue";
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: indigo;
+  }
+  h1::after {
+    content: "indigo. Tablet sizes";
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  body {
+    background-color: violet;
+  }
+
+  h1::after {
+    content: "violet. Small devices.";
+  }
+}

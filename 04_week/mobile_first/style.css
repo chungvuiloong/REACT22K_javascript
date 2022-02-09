@@ -1,0 +1,47 @@
+body {
+  background-color: rgb(207, 91, 8);
+}
+
+h1::after {
+  content: "Responsive";
+}
+
+@media (min-width: 576px) {
+  body {
+    background-color: rgb(212, 124, 61);
+  }
+
+  h1::after {
+    content: "Small devies, 576px";
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background-color: rgb(207, 142, 95);
+  }
+
+  h1::after {
+    content: "Tablet devies, 768px";
+  }
+}
+
+@media (min-width: 991px) {
+  body {
+    background-color: rgb(211, 180, 157);
+  }
+
+  h1::after {
+    content: "Big devies, 991px";
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-color: rgb(212, 201, 192);
+  }
+
+  h1::after {
+    content: "Big desktop devies, 1200px";
+  }
+}
