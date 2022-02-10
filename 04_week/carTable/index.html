@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Search -->
+    <section>
+      <h1>Search cars for car license</h1>
+      <label for="search">
+        <div>Search for car.</div>
+      </label>
+    </section>
+
+    <!-- input -->
+    <section>
+      <h1>Insert car data</h1>
+      <div>
+        <div>
+          <label
+            >License <input type="text" class="input" id="licenseInput"
+          /></label>
+        </div>
+
+        <div>
+          <label
+            >Car maker <input type="text" class="input" id="makerInput"
+          /></label>
+        </div>
+
+        <div>
+          <label
+            >Car model <input type="text" class="input" id="modelInput"
+          /></label>
+        </div>
+
+        <div>
+          <label
+            >Car color <input type="text" class="input" id="colorInput"
+          /></label>
+        </div>
+
+        <div>
+          <label
+            >Price <input type="number" class="input" id="priceInput"
+          /></label>
+        </div>
+
+        <div>
+          <label
+            >Owner <input type="text" class="input" id="ownerInput" />
+          </label>
+        </div>
+
+        <!-- Button =========================================================================== -->
+        <div>
+          <label>
+            <input type="button" name="submit" value="Add Cars" id="submit" />
+
+            <!-- Reset ================================================================= -->
+            <input type="button" name="reset" value="reset" />
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <!-- table -->
+    <section>
+      <h1>Car Info Table</h1>
+      <table style="width: 100%">
+        <tr>
+          <th>License</th>
+          <th>Car Maker</th>
+          <th>Car Model</th>
+          <th>Car Color</th>
+          <th>Car Price</th>
+          <th>Car Owner</th>
+        </tr>
+        <tr>
+          <td>License testing</td>
+          <td>Car Maker Testing</td>
+          <td>Car Model Testing</td>
+          <td>Car Model Testing</td>
+          <td>Car color Testing</td>
+          <td>Car price Testing</td>
+          <td>Car owner Testing</td>
+        </tr>
+      </table>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
