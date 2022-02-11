@@ -22,12 +22,17 @@ const carArr = [
   },
 ];
 
-reset = (e) => {
+resetCar = (e) => {
   e.preventDefault();
-  document.querySelector("input").value = 0;
+  document.querySelector("#priceInput").value = "";
+  document.querySelector("#makerInput").value = "";
+  document.querySelector("#modelInput").value = "";
+  document.querySelector("#colorInput").value = "";
+  document.querySelector("#ownerInput").value = "";
+  document.querySelector("#priceInput").value = "";
 };
 
-submit = (e) => {
+submitCar = (e) => {
   e.preventDefault();
   let license = document.querySelector("#licenseInput").value;
   let maker = document.querySelector("#makerInput").value;
@@ -80,4 +85,5 @@ submit = (e) => {
   discountRow.textContent = newCar.discount;
 };
 
-document.querySelector("#submit").addEventListener("click", submit);
+document.querySelector("#submit").addEventListener("click", submitCar);
+document.querySelector("#reset").addEventListener("click", resetCar);
