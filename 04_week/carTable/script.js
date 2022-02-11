@@ -22,6 +22,11 @@ const carArr = [
   },
 ];
 
+reset = (e) => {
+  e.preventDefault();
+  document.querySelector("input").value = 0;
+};
+
 submit = (e) => {
   e.preventDefault();
   let license = document.querySelector("#licenseInput").value;
@@ -30,10 +35,10 @@ submit = (e) => {
   let color = document.querySelector("#colorInput").value;
   let owner = document.querySelector("#ownerInput").value;
   let price = Number(document.querySelector("#priceInput").value);
-  // let discount = (price) => price / 100; Original algorithm
+  // let discount = (price) => price / 100; test algorithm
 
   let discount = (price) => {
-    if (price >= 20000) {
+    if (price > 20000) {
       return price * 0.75;
     } else if (price <= 4999) {
       return price * 0.9;
