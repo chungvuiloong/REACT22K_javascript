@@ -3,9 +3,41 @@
   margin: 0;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: lightblue;
+}
+
+#searchContainer {
+  height: 300px;
+  width: 100%;
+  background-color: pink;
+}
+
+#search {
+}
+
+#searchButton {
+  height: 30px;
+  width: 30px;
+}
+
+main {
+  display: flex;
+  direction: column;
+  justify-content: space-between;
+}
+
 #carDataContainer {
   height: 300px;
-  width: 400px;
+  width: 300px;
+
+  padding: 10px;
+  margin: 20px;
   border: 2px solid black;
   display: flex;
   flex-direction: column;
@@ -13,7 +45,19 @@
 }
 
 #testCont {
-  border: 2px solid red;
   display: flex;
   justify-content: space-between;
+  flex: 0;
+  flex-wrap: wrap;
+}
+
+#carTable {
+  border: 2px solid black;
+  padding: 20px;
+  margin: 20px;
+}
+
+#table {
+  display: flex;
+  flex-wrap: wrap;
 }

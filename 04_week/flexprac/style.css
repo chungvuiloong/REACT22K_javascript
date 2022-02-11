@@ -14,8 +14,10 @@ header {
   align-items: center;
 }
 
-nav ul li {
-  display: inline-block;
+main {
+  background-color: greenyellow;
+  /* height: 50vh; */
+  display: flex;
 }
 
 .left {
@@ -44,18 +46,11 @@ nav ul li {
 .right {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row-reverse;
 }
 
-.right > * {
+/* .right > * {
   flex: 1 1 160px;
-}
-
-main {
-  background-color: greenyellow;
-  /* height: 50vh; */
-  display: flex;
-}
+} */
 
 footer {
   height: 25;

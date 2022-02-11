@@ -24,7 +24,7 @@ const carArr = [
 
 resetCar = (e) => {
   e.preventDefault();
-  document.querySelector("#priceInput").value = "";
+  document.querySelector("#licenseInput").value = "";
   document.querySelector("#makerInput").value = "";
   document.querySelector("#modelInput").value = "";
   document.querySelector("#colorInput").value = "";
