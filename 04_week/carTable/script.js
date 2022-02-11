@@ -22,6 +22,11 @@ const carArr = [
   },
 ];
 
+searchCar = (e) => {
+  e.preventDefault();
+  let license = document.querySelector("#licenseInput").value;
+};
+
 resetCar = (e) => {
   e.preventDefault();
   document.querySelector("#licenseInput").value = "";
@@ -87,3 +92,4 @@ submitCar = (e) => {
 
 document.querySelector("#submit").addEventListener("click", submitCar);
 document.querySelector("#reset").addEventListener("click", resetCar);
+document.querySelector("#search").addEventListener("click", searchCar);

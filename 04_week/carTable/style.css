@@ -3,19 +3,26 @@
   margin: 0;
 }
 
+html,
+body {
+  background-color: rgb(50, 50, 189);
+}
+
 header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: lightblue;
+  background-color: #89cff0;
 }
 
 #searchContainer {
   height: 300px;
-  width: 100%;
-  background-color: pink;
+  background-color: #89cff0;
+  border: 0.2em solid black;
+
+  margin: 25px;
 }
 
 #search {
@@ -36,12 +43,14 @@ main {
   height: 300px;
   width: 300px;
 
-  padding: 10px;
+  padding: 20px 3%;
   margin: 20px;
-  border: 2px solid black;
+  border: 0.2em solid black;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+
+  background-color: #89cff0;
 }
 
 #testCont {
@@ -52,12 +61,14 @@ main {
 }
 
 #carTable {
-  border: 2px solid black;
-  padding: 20px;
+  border: 0.2em solid black;
+  padding: 20px 3%;
   margin: 20px;
+  background-color: #89cff0;
 }
 
 #table {
   display: flex;
   flex-wrap: wrap;
+  padding: 20px 3%;
 }
