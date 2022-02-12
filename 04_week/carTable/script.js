@@ -25,25 +25,25 @@ const carArr = [
 searchCar = (e) => {
   e.preventDefault();
 
-  let search = document.querySelector("#searchInput").value; // works
+  let search = document?.querySelector("#searchInput")?.value; // works
   let table = document.querySelector("#table");
   let rows = table.querySelectorAll("tr");
   let result = "";
 
   ////////////////////////////////
-  let license = table.rows[search].cells[0].textContent;
-  let maker = table.rows[search].cells[1].textContent;
-  let model = table.rows[search].cells[2].textContent;
-  let color = table.rows[search].cells[3].textContent;
-  let owner = table.rows[search].cells[4].textContent;
-  let price = table.rows[search].cells[5].textContent;
-  let discount = table.rows[search].cells[6].textContent;
+  let license = table?.rows[search]?.cells[0].textContent;
+  let maker = table?.rows[search]?.cells[1].textContent;
+  let model = table?.rows[search]?.cells[2].textContent;
+  let color = table?.rows[search]?.cells[3].textContent;
+  let owner = table?.rows[search]?.cells[4].textContent;
+  let price = table?.rows[search]?.cells[5].textContent;
+  let discount = table?.rows[search]?.cells[6].textContent;
 
   for (let i = 1; i < rows.length; i++) {
     if (search == 0 || "") {
       result = "Can't find a car license! Please provide another car license";
     } else if (search) {
-      result = `License number ${license} is ${maker} ${model} and it belongs to ${owner}. The discounted price is ${discount}`;
+      result = `License number ${license} is ${maker} ${model} and it belongs to ${owner}. The discount price is €${discount}`;
     }
     document.querySelector("#carSearchResult").textContent = result;
     return result;
