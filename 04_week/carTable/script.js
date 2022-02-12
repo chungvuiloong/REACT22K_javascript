@@ -44,8 +44,8 @@ searchCar = (e) => {
       result = "Can't find a car license! Please provide another car license";
     } else if (search) {
       result = `License number ${license} is ${maker} ${model} and it belongs to ${owner}. The discount price is €${discount}`;
-    } else {
-      return "null";
+    } else if (TypeError) {
+      result = "$";
     }
 
     document.querySelector("#carSearchResult").textContent = result;
