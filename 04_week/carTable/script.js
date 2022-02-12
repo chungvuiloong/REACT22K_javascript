@@ -23,8 +23,20 @@ const carArr = [
 ];
 
 searchCar = (e) => {
-  e.preventDefault();
-  let license = document.querySelector("#licenseInput").value;
+  // e.preventDefault();
+  let search = document.querySelector("#search").value; // works
+
+  let rows = document.querySelector("#table").querySelectorAll("tr");
+
+  // console.log(rows[0]);
+  console.log(rows[1]);
+  console.log(rows[2]);
+
+  for (var i = 0; i < rows.length; i++) {
+    // var column = rows[i].querySelectorAll("td");
+    // result = column[0].innerHTML.toUpperCase();
+    console.log(rows.length);
+  }
 };
 
 resetCar = (e) => {
@@ -69,9 +81,10 @@ submitCar = (e) => {
 
   carArr.push(newCar);
 
-  // Creates a table and inserts the new row and column
-  const table = document.getElementById("table");
-  const row = table.insertRow(1);
+  // Creates a table and inserts the new row
+  const table = document.querySelector("#table");
+  const row = table.insertRow(1); //this insets new row
+
   const licenseRow = row.insertCell(0);
   const makerRow = row.insertCell(1);
   const modelRow = row.insertCell(2);
@@ -92,4 +105,4 @@ submitCar = (e) => {
 
 document.querySelector("#submit").addEventListener("click", submitCar);
 document.querySelector("#reset").addEventListener("click", resetCar);
-document.querySelector("#search").addEventListener("click", searchCar);
+document.querySelector("#searchButton").addEventListener("click", searchCar);
