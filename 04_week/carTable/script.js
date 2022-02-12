@@ -23,19 +23,31 @@ const carArr = [
 ];
 
 searchCar = (e) => {
-  // e.preventDefault();
-  let search = document.querySelector("#search").value; // works
+  e.preventDefault();
 
-  let rows = document.querySelector("#table").querySelectorAll("tr");
+  let search = document.querySelector("#searchInput").value; // works
+  let table = document.querySelector("#table");
+  let rows = table.querySelectorAll("tr");
+  let result = "";
 
-  // console.log(rows[0]);
-  console.log(rows[1]);
-  console.log(rows[2]);
+  ////////////////////////////////
+  let license = table.rows[search].cells[0].textContent;
+  let maker = table.rows[search].cells[1].textContent;
+  let model = table.rows[search].cells[2].textContent;
+  let color = table.rows[search].cells[3].textContent;
+  let owner = table.rows[search].cells[4].textContent;
+  let price = table.rows[search].cells[5].textContent;
+  let discount = table.rows[search].cells[6].textContent;
 
-  for (var i = 0; i < rows.length; i++) {
-    // var column = rows[i].querySelectorAll("td");
-    // result = column[0].innerHTML.toUpperCase();
-    console.log(rows.length);
+  for (let i = 1; i < rows.length; i++) {
+    if (search == 0 || "") {
+      result = "Can't find a car license! Please provide another car license";
+    } else if (search) {
+      result = `License number ${license} is ${maker} ${model} and it belongs to ${owner}. The discounted price is ${discount}`;
+    }
+    document.querySelector("#carSearchResult").textContent = result;
+    return result;
+    ///////////////////
   }
 };
 
@@ -83,7 +95,9 @@ submitCar = (e) => {
 
   // Creates a table and inserts the new row
   const table = document.querySelector("#table");
-  const row = table.insertRow(1); //this insets new row
+  const row = table.insertRow(-1); //this sets new row to the bottom
+
+  // const row = table.insertRow(1); //this sets new row to the top DONT USE UNLESS TO PUT THINGS AT THE TOP
 
   const licenseRow = row.insertCell(0);
   const makerRow = row.insertCell(1);
