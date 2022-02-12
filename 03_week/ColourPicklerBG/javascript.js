@@ -6,8 +6,6 @@ let color2 = document.querySelector(".color2");
 
 let direction = document.querySelectorAll('input[name="direction"]');
 
-// let direction = document.querySelectorAll(".direction1.direction2");
-
 // Margits solution
 const setGradient = () => {
   console.log(color1.value);
@@ -20,6 +18,12 @@ const setGradient = () => {
       selectedValue = sel.value;
     }
   }
+
+  //  for (const sel of direction) {
+  //    if (sel.checked) {
+  //      selectedValue = sel.value;
+  //    }
+  //  }
 
   console.log(selectedValue);
 

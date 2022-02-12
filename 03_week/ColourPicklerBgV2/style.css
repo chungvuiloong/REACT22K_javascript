@@ -6,6 +6,8 @@
 
 html {
   height: 100%;
+  background-color: linear-gradient();
+  background-image: linear-gradient();
 }
 
 button {
@@ -22,11 +24,6 @@ input[type="radio"] {
   border-radius: 0%;
   border: 2px solid black;
 }
-
-input[type="radio"]:hover {
-  border: 2px solid rgb(24, 44, 228);
-}
-
 /* .navCont {
   height: 100%;
   width: 200px;
@@ -35,6 +32,7 @@ input[type="radio"]:hover {
 } */
 
 body {
+  background-color: linear-gradient();
   background-image: linear-gradient();
   background-repeat: no-repeat;
   background-size: cover;
@@ -97,4 +95,8 @@ input[type="color"] {
 .bottomRight {
   transform: rotate(0);
   -webkit-transform: rotate(0);
+}
+
+button:hover {
+  background-color: lightblue;
 }
