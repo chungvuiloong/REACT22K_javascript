@@ -1,4 +1,3 @@
-let form = document.querySelector("form");
 let body = document.querySelector("body");
 
 // Variable for color picker
@@ -92,6 +91,6 @@ window.addEventListener("load", (event) => {
   });
 });
 
-form.addEventListener("click", setGradient);
+body.addEventListener("click", setGradient);
 color1.addEventListener("input", setGradient);
 color2.addEventListener("input", setGradient);
