@@ -23,34 +23,31 @@ const carArr = [
 ];
 
 searchCar = (e) => {
-  e.preventDefault();
-
-  let search = document?.querySelector("#searchInput")?.value; // works
+  let search = document.querySelector("#searchInput").value; // works
   let table = document.querySelector("#table");
-  let rows = table.querySelectorAll("tr");
+  let rows = table.querySelector("tr");
   let result = "";
+  let rowLength = table.querySelectorAll("tr").length;
 
   ////////////////////////////////
-  let license = table.rows[search].cells[0].textContent;
-  let maker = table.rows[search].cells[1].textContent;
-  let model = table.rows[search].cells[2].textContent;
-  let color = table.rows[search].cells[3].textContent;
-  let owner = table.rows[search].cells[4].textContent;
-  let price = table.rows[search].cells[5].textContent;
-  let discount = table.rows[search].cells[6].textContent;
 
-  for (let i = 1; i < rows.length; i++) {
-    if (search == 0 || "") {
-      result = "Can't find a car license! Please provide another car license";
-    } else if (search) {
-      result = `License number ${license} is ${maker} ${model} and it belongs to ${owner}. The discount price is €${discount}`;
-    } else if (TypeError) {
-      result = "$";
+  for (let i = 1; i < rowLength; i++) {
+    let license = table.rows[i].cells[0].textContent;
+    let maker = table.rows[i].cells[1].textContent;
+    let model = table.rows[i].cells[2].textContent;
+    let color = table.rows[i].cells[3].textContent;
+    let owner = table.rows[i].cells[4].textContent;
+    let price = table.rows[i].cells[5].textContent;
+    let discount = table.rows[i].cells[6].textContent;
+
+    if (search === table.rows[i].cells[0].textContent) {
+      console.log(`License number is ${table.rows[i].cells[0].textContent}`);
+      result = `License number is ${license} is ${maker} ${model} and it belongs to ${owner}. The discount price is €${discount}`;
+    } else if (search === "undefined") {
+      result = "???";
     }
 
     document.querySelector("#carSearchResult").textContent = result;
-    return result;
-    ///////////////////
   }
 };
 
@@ -122,4 +119,4 @@ submitCar = (e) => {
 
 document.querySelector("#submit").addEventListener("click", submitCar);
 document.querySelector("#reset").addEventListener("click", resetCar);
-document.querySelector("#searchButton").addEventListener("click", searchCar);
+// document.querySelector("#searchButton").addEventListener("click", searchCar);
