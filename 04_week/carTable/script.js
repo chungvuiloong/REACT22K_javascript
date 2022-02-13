@@ -49,6 +49,9 @@ searchCar = (e) => {
     if (search === table.rows[i].cells[0].textContent) {
       console.log(`License number is ${table.rows[i].cells[0].textContent}`);
       result = `License number is ${license} is ${maker} ${model} and it belongs to ${owner}. The discount price is €${discount}`;
+      break;
+    } else {
+      result = "??";
     }
 
     document.querySelector("#carSearchResult").textContent = result;
