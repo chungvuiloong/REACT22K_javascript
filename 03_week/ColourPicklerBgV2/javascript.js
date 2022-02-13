@@ -83,6 +83,10 @@ const setGradient = () => {
   });
 };
 
+body.addEventListener("click", setGradient);
+color1.addEventListener("input", setGradient);
+color2.addEventListener("input", setGradient);
+
 window.addEventListener("load", (event) => {
   body.style.backgroundImage = `linear-gradient(${selectedValue},${color1.value},${color2.value})`;
 
@@ -90,7 +94,3 @@ window.addEventListener("load", (event) => {
     button.style.backgroundImage = `linear-gradient(${selectedValue},${color1.value},${color2.value})`;
   });
 });
-
-body.addEventListener("click", setGradient);
-color1.addEventListener("input", setGradient);
-color2.addEventListener("input", setGradient);
