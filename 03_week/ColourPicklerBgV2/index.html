@@ -6,18 +6,17 @@
   </head>
 
   <body>
-    <h1>BG Gradient Generator</h1>
+    
 
     <form>
       <!-- Side Navbar -->
       <section>
         <div class="navCont">
-          <div></div>
-        </div>
-      </section>
 
-      <!-- Colour Picker -->
-      <section>
+          <h1>BG Gradient Generator</h1>
+
+          <!-- Colour Picker -->
+      <section id ="colorContainer">
         <input
           class="color1"
           type="color"
@@ -34,42 +33,65 @@
         />
       </section>
 
- 
-        <!-- TESTER Left -->
-        <section>
+
+      <!-- Direction buttons -->
+        <section id ="buttonContainer">
         <div>
-          <input type="button" name="direction" value="to top left" id="topLeft" class="direction1">
-          <label><i class="arrow topLeft"></i></label>
-          <input type="button" name="direction" value="to top" id="top" class="direction2"><label><i class="arrow top"></i></label>
-          <input type="button" name="direction" value="to top right" id="topLeft" class="direction3"><label><i class="arrow topRight"></i></label>
+            <button type="button" name="direction" value="to top left" id="topLeft" class="direction1">
+                <label><i class="arrow topLeft"></i></label>
+            </button>
+
+            <button type="button" name="direction" value="to top" id="top" class="direction2">
+                <label><i class="arrow top"></i></label>
+            </button>
+
+            <button type="button" name="direction" value="to top right" id="topRight" class="direction3">
+              <label><i class="arrow topRight"></i></label>
+            </button>
+
         </div>
 
         <div>
-          <input type="button" name="direction" value="to left" id="left" class="direction4">
+          <button type="button" name="direction" value="to left" id="left" class="direction4">
             <label>
               <i class="arrow left"></i>
             </label>
+          </button>
           
 
-          <input type="button">
+          <button type="button" name="direction" value="random" id="random" class="direction9"></button>
 
-          <input type="button" name="direction" value="to right" id="right" class="direction5">
+
+          <button type="button" name="direction" value="to right" id="right" class="direction5">
             <label>
               <i class="arrow right"></i>
             </label>
-          
+          </button>
         </div>
 
         <div>
-            <input type="button" name="direction" value="to bottom left" id="bottomLeft" class="direction6">
-            <label><i class="arrow bottomLeft"></i></label>
-            <input type="button" name="direction" value="to bottom" id="bottom" class="direction7">
-            <label><i class="arrow down"></i></label>
-            <input type="button" name="direction" value="to bottom right" id="bottomRight" class="direction8">
-            <label><i class="arrow bottomRight"></i></label>
+            <button type="button" name="direction" value="to bottom left" id="bottomLeft" class="direction6">
+              <label><i class="arrow bottomLeft"></i></label>
+            </button>
+
+            <button type="button" name="direction" value="to bottom" id="bottom" class="direction7">
+              <label><i class="arrow down"></i></label>
+            </button>
+
+            <button type="button" name="direction" value="to bottom right" id="bottomRight" class="direction8">
+              <label><i class="arrow bottomRight"></i></label>
+            </button>
         </div>
 
         </section>
+          
+        </div>
+      </section>
+
+      
+
+ 
+        
       </div>
     </form>
 
