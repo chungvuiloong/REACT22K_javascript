@@ -40,11 +40,6 @@ searchCar = (e) => {
     let price = table.rows[i].cells[5].textContent;
     let discount = table.rows[i].cells[6].textContent;
 
-    // if (table.rows[i].cells[0].textContent.includes(search)) {
-    //   console.log(`License number is ${table.rows[i].cells[0].textContent}`);
-    //   result = `License number is ${license} is ${maker} ${model} and it belongs to ${owner}. The discount price is €${discount}`;
-    // }
-
     // / Version 1
     if (search === table.rows[i].cells[0].textContent) {
       console.log(`License number is ${table.rows[i].cells[0].textContent}`);
