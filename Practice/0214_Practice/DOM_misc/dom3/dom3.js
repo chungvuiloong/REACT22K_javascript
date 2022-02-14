@@ -9,8 +9,12 @@ it receives the text inside the textbox.
  * @param {string} item
  */
 const addItemToShoppingList = (item) => {
-  let list = document.querySelector("#shopping-list");
-  list.insertAdjacentHTML("beforeend", `<li>${item}</li>`);
+  if (item == 0 || "") {
+    return "none";
+  } else {
+    let list = document.querySelector("#shopping-list");
+    list.insertAdjacentHTML("beforeend", `<li>${item}</li>`);
+  }
 };
 
 // Sample usage - do not modify
