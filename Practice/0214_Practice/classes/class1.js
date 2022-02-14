@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
 We have defined an empty class User in class1.js. Create a new variable called user and assign it to a new instance of the class User.
@@ -10,3 +10,5 @@ visualize the returned object in the console.
 class User {
   // empty class for now
 }
+
+console.log(User);
