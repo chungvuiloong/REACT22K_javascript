@@ -4,10 +4,25 @@ class Tasks {
   }
 
   /** @param {string} csvString */
+
   importCsv(csvString) {
-    let options = dropdown.querySelector("option");
-    console.log(options);
-    // console.log(dropdown.value.length);
+    this.tasks = csvString.split(",");
+  }
+
+  getCount() {
+    return this.tasks.length;
+  }
+
+  getFirst() {
+    return this.tasks[0];
+  }
+
+  getLast() {
+    return this.tasks[this.tasks.length - 1];
+  }
+
+  getUnformattedTasks() {
+    return this.tasks.join(", ").toLowerCase();
   }
 }
 
