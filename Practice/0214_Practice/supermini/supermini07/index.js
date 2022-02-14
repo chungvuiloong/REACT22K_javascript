@@ -4,20 +4,24 @@ class Tasks {
   }
 
   /** @param {string} csvString */
-  importCsv(csvString) {}
+  importCsv(csvString) {
+    let options = dropdown.querySelector("option");
+    console.log(options);
+    // console.log(dropdown.value.length);
+  }
 }
 
 //Sample usage do not modify (but feel free to read)
-const dropdown = document.querySelector('#csv-dropdown');
-const tbody = document.querySelector('#tbody');
+const dropdown = document.querySelector("#csv-dropdown");
+const tbody = document.querySelector("#tbody");
 
 const tasks = new Tasks();
 
 function render() {
-  tbody.innerHTML = '';
+  tbody.innerHTML = "";
   tasks.tasks.forEach(function (task) {
     tbody.insertAdjacentHTML(
-      'beforeend',
+      "beforeend",
       `<tr>
             <th>Task</th>
             <td>${task}</td>
@@ -25,7 +29,7 @@ function render() {
     );
   });
   tbody.insertAdjacentHTML(
-    'beforeend',
+    "beforeend",
     `<tr class="separator">
             <th>Number of tasks</th>
             <td>${tasks.getCount()}</td>
@@ -46,7 +50,7 @@ function render() {
   );
 }
 
-dropdown.addEventListener('change', (event) => {
+dropdown.addEventListener("change", (event) => {
   tasks.importCsv(dropdown.value);
   render();
 });
