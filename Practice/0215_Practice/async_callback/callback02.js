@@ -20,8 +20,10 @@ Note that the sumGrades function accepts a success callback as its second parame
  * @param {number[]} grades
  */
 const calculateSum = (grades) => {
-  sumGrades(grades);
-  console.log("The sum is: X");
+  const callback = (sum) => {
+    console.log(`The sum is ${sum}`);
+  };
+  sumGrades(grades, callback);
 };
 
 // Sample usage - do not modify
