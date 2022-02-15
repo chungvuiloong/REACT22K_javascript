@@ -33,12 +33,6 @@ const logWeatherDescription = (cityName) => {
   });
 };
 
-// const logWeatherDescription = (cityName) => {
-//   getWeatherDescription(cityName).then((data) => {
-//     console.log(data);
-//   });
-// };
-
 // Sample usage - do not modify
 logWeatherDescription("Helsinki"); // will eventually log "Cloudy"
 logWeatherDescription("Tokyo"); // will eventually log "Sunny"
