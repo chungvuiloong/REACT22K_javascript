@@ -29,7 +29,7 @@ getWeatherDescription to log the weather description to the console.....*/
  */
 const logWeatherDescription = (cityName) => {
   getWeatherDescription(cityName).then((data) => {
-    console.log(data);
+    console.log(`${data} ${cityName}`);
   });
 };
 
