@@ -22,7 +22,7 @@ class Tasks {
   }
 
   getUnformattedTasks() {
-    return this.tasks.join(", ").toLowerCase();
+    return this.tasks.join(",").toLowerCase();
   }
 }
 

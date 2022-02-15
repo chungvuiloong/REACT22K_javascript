@@ -28,8 +28,16 @@ getWeatherDescription to log the weather description to the console.....*/
  * @param {string} cityName
  */
 const logWeatherDescription = (cityName) => {
-  getWeatherDescription(city);
+  getWeatherDescription(cityName).then((data) => {
+    console.log(data);
+  });
 };
+
+// const logWeatherDescription = (cityName) => {
+//   getWeatherDescription(cityName).then((data) => {
+//     console.log(data);
+//   });
+// };
 
 // Sample usage - do not modify
 logWeatherDescription("Helsinki"); // will eventually log "Cloudy"
