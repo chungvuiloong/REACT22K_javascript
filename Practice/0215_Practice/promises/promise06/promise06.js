@@ -16,8 +16,13 @@ const waitForCompleteClick = () => {
 
 // Update here...
 
-const waitPromise = waitForCompleteClick();
+// const waitPromise = waitForCompleteClick();
 
-waitPromise.then(() => {
+// waitPromise.then(() => {
+//   console.log("Complete clicked");
+// });
+
+//Refactor
+waitForCompleteClick().then(() => {
   console.log("Complete clicked");
 });

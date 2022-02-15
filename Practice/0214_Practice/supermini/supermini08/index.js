@@ -9,8 +9,8 @@ class Passport {
     this.lastName = lastName;
   }
 
-  getFirstName = () => this.firstName;
-  getLastName = () => this.lastName;
+  getFirstName = () => this.firstName.toLowerCase();
+  getLastName = () => this.lastName.toUpperCase();
   getFullName = () => `${this.firstName} ${this.lastName}`;
   getInitials = () => `${this.firstName.charAt(0)}, ${this.lastName.charAt(0)}`;
 
