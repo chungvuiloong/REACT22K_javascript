@@ -16,26 +16,46 @@
   <body>
     <section id="hero-container">
       <header id="header-container">
-        <div id="header-title">MrJay Portfolio</div>
+        <div id="header-title-container">
+          <div id="header-title">MrJay</div>
+        </div>
 
         <nav id="nav">
-          <li>First</li>
-          <li>Second</li>
-          <li>Third</li>
-          <li>Contact</li>
+          <li><a href="#first">First</a></li>
+          <li><a href="#second">Second</a></li>
+          <li><a href="#first">Third</a></li>
+          <li><a href="#first">Contact</a></li>
         </nav>
       </header>
     </section>
 
     <main>
-      <section id="first"></section>
+      <section id="first">
+        <p>First</p>
+      </section>
 
-      <section id="second"></section>
+      <section id="second">
+        <p>
+          Second <span class="material-icons-outlined"> check_circle </span>
+        </p>
+      </section>
 
-      <section id="third"></section>
+      <section id="third">
+        <p>Third</p>
+      </section>
     </main>
+
     <footer id="copyrights">
-      <div>Copyrights &copy</div>
+      <div>Copyrights &copy <span class="material-icons">face</span></div>
     </footer>
+
+    <img
+      class="topCat"
+      src="https://www.clipartmax.com/png/full/108-1088974_report-abuse-pusheen-and-stormy-balloons.png"
+      onclick="topFunction()"
+    />
+    <!-- <button class="topCat"><a href="#">Top</a></button> -->
+
+    <script src="script.js"></script>
   </body>
 </html>
