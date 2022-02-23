@@ -5,7 +5,8 @@ let stars = document.querySelector("#stars");
 let moon = document.querySelector("#whiteMoon");
 let meteor = document.querySelector("#meteor");
 
-// let stars = document.querySelector("#stars");
+let backMountains = document.querySelector("#backMountains");
+
 // let stars = document.querySelector("#stars");
 // let stars = document.querySelector("#stars");
 // let stars = document.querySelector("#stars");
@@ -20,4 +21,6 @@ window.addEventListener("scroll", () => {
   meteor.style.top = yPosition * 1 + "px";
 
   moon.style.marginTop = yPosition * 1.25 + "px";
+
+  backMountains.style.top = yPosition * 0.1 + "px";
 });
