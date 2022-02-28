@@ -9,7 +9,7 @@ In the future, once we implement user-details, the code will automatically work 
 
 const waitOneSecond = () => {
   return new Promise((resolve, reject) => {
-    setTimeout(() => {}, 1000);
+    resolve("Resolved");
     reject("Rejected");
   });
 };
