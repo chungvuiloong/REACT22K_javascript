@@ -19,7 +19,7 @@ const fakeFetch = () => {
       };
 
       resolve(data);
-    }, 1000);
+    }, 3000);
   });
 };
 
