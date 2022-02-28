@@ -14,6 +14,14 @@ const waitOneSecond = () => {
   });
 };
 
+// Works but not 100% correct
+// const waitOneSecond = () => {
+//   return new Promise((resolve, reject) => {
+//     resolve("Resolved");
+//     reject("Rejected");
+//   });
+// };
+
 // Sample usage - do not modify
 waitOneSecond().then(() => {
   console.error("Done waiting.");
