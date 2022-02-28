@@ -33,7 +33,7 @@ data that it receives once it has completed......*/
 
 const logFlightStatus = () => {
   fakeFetch("flight-status").then((flightStatus) => {
-    console.log(`${flightStatus}`);
+    console.log(flightStatus);
   });
 };
 
