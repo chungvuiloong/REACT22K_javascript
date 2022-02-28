@@ -1,28 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html,
 body {
   width: 100%;
   height: 100%;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
   color: #fff;
   background-color: #000;
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
-  font-weight: 700;
 }
 
+/* Header */
+.headContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+nav .portFolioTitle {
+  color: black;
+  text-align: center;
+  font-size: 6.25em;
+  opacity: 0.7;
+  padding: 10px;
+  text-shadow: 1px 1px 10px white;
+}
+
+.navContainer {
+  margin: auto 0 auto 0;
+  text-align: center;
+  align-items: center;
+  background-position: center;
+}
+
+li {
+  color: #000000;
+  font-size: 1em;
+  display: inline-block;
+  padding: 16px;
+  margin: auto;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav li:hover {
+  background-color: rgb(56, 97, 230);
+  border-radius: 50px;
+}
+
+/* Parallax Layers */
 .layer-parent {
   position: relative;
   width: 100vw;
   height: 100vh;
-  /* background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  justify-content: center;
-  align-items: center;
-  object-fit: cover; */
   overflow: hidden;
   object-fit: cover;
   background-position: center;
@@ -41,20 +79,11 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  justify-content: center;
-  align-items: center;
 }
 
 .layer-parent .whiteMoon {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 100px auto 0px auto;
+  height: 100%;
 }
 
 .layer-parent .stars {
@@ -63,6 +92,28 @@ body {
 
 .layer-parent .meteor {
   position: absolute;
+}
+
+.layer-parent .tresureChest {
+  position: absolute;
+}
+
+.layer-parent .innerTentacles {
+  position: absolute;
+}
+
+.layer-parent .octopusCropped {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  image-rendering: crisp-edges;
+  transform: rotate(180deg) !important;
+  border: 1px solid red;
 }
 
 .blend {

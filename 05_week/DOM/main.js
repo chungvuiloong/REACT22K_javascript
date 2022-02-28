@@ -15,10 +15,10 @@ const scrollFunction = () => {
     document.documentElement.scrollTop > 500
   ) {
     header.classList.add("bg");
-    // button.style.display = "block";
+    button.style.display = "block";
   } else {
     header.classList.remove("bg");
-    // button.style.display = "none";
+    button.style.display = "none";
   }
 };
 
