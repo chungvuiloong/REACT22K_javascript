@@ -15,15 +15,19 @@ Complete the checkForNewNotifications function such that it makes a fetch re
 and return its result. Also, visualize that the result of fetch is a Promise. You should see Promise in the console.
 */
 
+const API = new FetchWrapper(
+  "https://programmingjs-90a13-default-rtdb.europe-west1.firebasedatabase.app/"
+);
+
 const getChapters = () => {
   // TODO
 
-  const API = new FetchWrapper(
-    "https://programmingjs-90a13-default-rtdb.europe-west1.firebasedatabase.app/notifications.json"
-  );
+  API.get("/chapters.json").then((data) => {
+    console.log(data);
 
-  API.get("/notifications.json").then((chapter) => {
-    console.log(displayCompletedChapters(chapter));
+    const filteredData = data.filter((chapters) => chapters.isCompleted);
+    console.log(filteredData);
+    displayCompletedChapters(filteredData);
   });
 };
 
