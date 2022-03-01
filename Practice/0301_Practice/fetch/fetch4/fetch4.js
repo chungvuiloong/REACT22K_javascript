@@ -26,6 +26,7 @@ const getChapters = () => {
     console.log(data);
 
     const filteredData = data.filter((chapters) => chapters.isCompleted);
+
     console.log(filteredData);
     displayCompletedChapters(filteredData);
   });
