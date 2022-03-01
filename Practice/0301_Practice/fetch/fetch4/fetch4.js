@@ -1,14 +1,13 @@
-'use strict';
+"use strict";
 
 class FetchWrapper {
-    constructor(baseURL) {
-        this.baseURL = baseURL;
-    }
+  constructor(baseURL) {
+    this.baseURL = baseURL;
+  }
 
-    get(endpoint) {
-        return fetch(this.baseURL + endpoint)
-            .then(response => response.json());
-    }
+  get(endpoint) {
+    return fetch(this.baseURL + endpoint).then((response) => response.json());
+  }
 }
 
 /*
@@ -16,15 +15,21 @@ Complete the checkForNewNotifications function such that it makes a fetch re
 and return its result. Also, visualize that the result of fetch is a Promise. You should see Promise in the console.
 */
 
-
 const getChapters = () => {
-    // TODO
+  // TODO
 
-}
+  const API = new FetchWrapper(
+    "https://programmingjs-90a13-default-rtdb.europe-west1.firebasedatabase.app/notifications.json"
+  );
+
+  API.get("/chapters.json").then((chapter) => {
+    console.log(chapter);
+  });
+};
 
 // do NOT modify this function
 function displayCompletedChapters(chapters) {
-    console.log("Received", chapters);
+  console.log("Received", chapters);
 }
 
 // Sample usage - do not modify
