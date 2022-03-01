@@ -22,8 +22,8 @@ const getChapters = () => {
     "https://programmingjs-90a13-default-rtdb.europe-west1.firebasedatabase.app/notifications.json"
   );
 
-  API.get("/chapters.json").then((chapter) => {
-    console.log(chapter);
+  API.get("/notifications.json").then((chapter) => {
+    console.log(displayCompletedChapters(chapter));
   });
 };
 
