@@ -37,14 +37,14 @@ window.addEventListener("scroll", () => {
   // outerTentacles.style.top = yPosition * 0.06 + "px";
 });
 
-let footer = document.querySelector("footer");
+// let footer = document.querySelector("footer");
 
-footer.addEventListener("scroll", () => {
-  let yPosition = footer.scrollY;
+// footer.addEventListener("scroll", () => {
+//   let yPosition = footer.scrollY;
 
-  innerTentacles.style.top = yPosition * 1 + "px";
-  middleTentacles.style.top = yPosition * 0.05 + "px";
-  outerTentacles.style.top = yPosition * 0.06 + "px";
-});
+//   innerTentacles.style.top = yPosition * 1 + "px";
+//   middleTentacles.style.top = yPosition * 1 + "px";
+//   outerTentacles.style.top = yPosition * 1 + "px";
+// });
 
 var rellax = new Rellax(".rellax");
