@@ -22,7 +22,7 @@ const API = new FetchWrapper(
 const getChapters = () => {
   // TODO
 
-  API.get("/chapters.json").then((data) => {
+  API.get("chapters.json").then((data) => {
     console.log(data);
 
     const filteredData = data.filter((chapters) => chapters.isCompleted);
