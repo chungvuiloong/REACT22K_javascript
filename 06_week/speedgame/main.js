@@ -9,7 +9,7 @@ overlay = document.querySelector(".overlay");
 // console.log(container);
 
 //WORKING Shows default 0 score
-document.querySelector("score").textContent = score;
+const scoreText = document.querySelector("score").textContent;
 
 const circles = document.querySelectorAll(".circle");
 
