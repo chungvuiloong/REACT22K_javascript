@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+.circleContainer {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.circle {
+  background-color: lightblue;
+  margin: 25px;
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  height: 5em;
+  width: 5em;
+  border: 2px solid black;
+  border-radius: 100em;
+}
+
+.filled {
+  background-color: rgb(24, 127, 223);
+}
+
+modal {
+  visibility: hidden;
+}

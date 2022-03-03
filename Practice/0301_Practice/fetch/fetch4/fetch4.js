@@ -20,8 +20,6 @@ const API = new FetchWrapper(
 );
 
 const getChapters = () => {
-  // TODO
-
   API.get("chapters.json").then((data) => {
     console.log(data);
 
