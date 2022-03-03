@@ -4,7 +4,7 @@
   box-sizing: content-box;
 }
 
-.circleContainer {
+.circles {
   display: flex;
   justify-items: center;
   justify-content: center;
