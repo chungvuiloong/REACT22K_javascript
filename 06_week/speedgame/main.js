@@ -1,5 +1,3 @@
-let score = 0;
-
 firstButton = document.querySelector("#circle1");
 secondButton = document.querySelector("#circle2");
 thirdButton = document.querySelector("#circle3");
@@ -16,6 +14,7 @@ document.querySelector("score").textContent = score;
 const circles = document.querySelectorAll(".circle");
 
 let active = 0;
+let score = 0;
 
 function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -28,6 +27,12 @@ circles.forEach((circle, i) =>
 const clickedCircle = (i) => {
   i += 1;
   console.log("clicked circle was:", i);
+
+  if (i !== active) {
+    endGame();
+  } else {
+    score++;
+  }
 };
 
 const startGame = () => {
