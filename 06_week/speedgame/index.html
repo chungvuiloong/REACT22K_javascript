@@ -10,22 +10,24 @@
   <body>
     <header>Speedgame</header>
 
-    <div>How many have I hit? <score></score> cicles</div>
+    <!-- <div>How many have I hit? <score></score> cicles</div> -->
 
     <div id="score" class="score">Your score is <score></score></div>
 
-    <section class="circleContainer">
-      <div id="circle1" class="circle" value="1">1</div>
-      <div id="circle2" class="circle" value="2">2</div>
-      <div id="circle3" class="circle" value="3">3</div>
+    <section class="circles">
+      <div id="circle1" class="circle active" value="1 clicked">1</div>
+      <div id="circle2" class="circle" value="2 clicked">2</div>
+      <div id="circle3" class="circle" value="3 clicked">3</div>
     </section>
 
-    <section>
-      <modal> </modal>
+    <section class="overlayContainer">
+      <div class="overlay">Opps</div>
     </section>
 
-    <button type="button">Start game</button>
-    <button type="button">End game</button>
+    <button type="button" class="start" value="Start clicked">
+      Start game
+    </button>
+    <button type="button" class="end" value="End clicked">End game</button>
 
     <script src="main.js"></script>
   </body>

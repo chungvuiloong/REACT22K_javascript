@@ -25,10 +25,10 @@
   border-radius: 100em;
 }
 
-.filled {
+.circle.active {
   background-color: rgb(24, 127, 223);
 }
 
-modal {
+.overlay {
   visibility: hidden;
 }
