@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /*
 You're provided with an async function getMinimumVotingAge. Do not change it.
@@ -12,3 +12,6 @@ const getMinimumVotingAge = async () => {
 };
 
 // Sample usage. TODO: write it yourself
+getMinimumVotingAge().then((value) => {
+  console.log(value);
+});
