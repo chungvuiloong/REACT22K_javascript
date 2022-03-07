@@ -15,6 +15,8 @@ const circles = document.querySelectorAll(".circle");
 
 let active = 0;
 let score = 0;
+let pace = 1000;
+let timer;
 
 function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -32,6 +34,7 @@ const clickedCircle = (i) => {
     endGame();
   } else {
     score++;
+    scoreText.textContent = score;
   }
 };
 
@@ -47,7 +50,8 @@ const startGame = () => {
 
   console.log("active circle:", active);
 
-  timer = setTimeout(startGame, 1000);
+  timer = setTimeout(startGame, pace);
+  pace = pace - 10;
 
   function pickNew(active) {
     let nextActive = getRndInteger(0, 3);
@@ -66,7 +70,9 @@ const startGame = () => {
 
 const endGame = () => {
   console.log("Game ended");
+  clearTimeout(timer);
   overlay.style.visibility = "visible";
+  resultText.textContent = `Your final score was ${score}`;
 };
 
 const reloadGame = () => {
