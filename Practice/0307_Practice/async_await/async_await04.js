@@ -9,7 +9,7 @@ class User {
     this.age = age;
   }
 
-  canVote = async (age) => {
+  canVote = async () => {
     return this.age >= 18;
   };
 }

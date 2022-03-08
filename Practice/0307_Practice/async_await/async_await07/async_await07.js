@@ -10,7 +10,7 @@ You should use async/await */
 let URL =
   "https://programmingjs-90a13-default-rtdb.europe-west1.firebasedatabase.app/tweet.json";
 
-const getTweetDetails = () => {
+const getTweetDetails = async () => {
   // TODO using async/await
 };
 
