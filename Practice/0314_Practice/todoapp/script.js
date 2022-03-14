@@ -12,4 +12,8 @@ const listMaker = () => {
 form.addEventListener("submit", function (e) {
     e.preventDefault();
 
+
+
+    listMaker(input.value);
+    input.value = "";
 })
