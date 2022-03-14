@@ -1,9 +1,9 @@
 const form      = document.getquerySelector("form");
 const ul        = document.getquerySelector("ul");
 const button    = document.getquerySelector("button");
-const input     = document.getquerySelector("#item");
+const input     = document.getElementById("item");
 
-const listMaker = () => {
+const listMaker = (text) => {
     const li = document.createElement("li");
     li.textContent = text;
     ul.appendChild(li);
@@ -16,4 +16,4 @@ form.addEventListener("submit", function (e) {
 
     listMaker(input.value);
     input.value = "";
-})
+});
