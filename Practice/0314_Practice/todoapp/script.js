@@ -1,6 +1,6 @@
-const form      = document.getquerySelector("form");
-const ul        = document.getquerySelector("ul");
-const button    = document.getquerySelector("button");
+const form      = document.querySelector("form");
+const ul        = document.querySelector("ul");
+const button    = document.querySelector("button");
 const input     = document.getElementById("item");
 
 const listMaker = (text) => {
