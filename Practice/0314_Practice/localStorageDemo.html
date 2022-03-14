@@ -8,7 +8,31 @@
     <button onclick="mySave()">Save</button>
     <button onclick="myLoad()">Load</button>
     <button onclick="remove()">Remove</button>
+    <button onclick="clear()">Clear</button>
     <script>
+
+      let num = 1;
+      // let text = String(document.querySelector("textarea").value);
+
+      mySave = () => {
+        localStorage.setItem("myContent", String(document.querySelector("textarea").value));
+        num++;
+      }
+
+      myLoad = () => {
+        localStorage.setItem("new");
+      }
+
+      remove = () => {
+        localStorage.removeItem("new");
+        num--;
+      }
+
+      clear = () => {
+        localStorage.clear("new");
+      }
+
+
       // let us look at simple local storage example
     </script>
   </body>
