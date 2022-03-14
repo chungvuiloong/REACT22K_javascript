@@ -6,8 +6,70 @@
 
 <script>
 
-  // Write a JavaScript code to animate cat and it's hat
-  function animate() {
+  // // Write a JavaScript code to animate cat and it's hat
+  //   var catTumbling = [
+  //   { transform: 'rotate(0) translate3D(-50%, -50%, 0', color: '#000' }, 
+  //   { color: '#431236', offset: 0.3},
+  //   { transform: 'rotate(360deg) translate3D(-50%, -50%, 0)', color: '#000' }
+  // ];
 
-  }
+  // var catTiming = {
+  //   duration: 3000,
+  //   iterations: Infinity
+  // }
+
+  // document.getElementById("cat").animate(
+  //   catTumbling, 
+  //   catTiming
+  // )
+
+
+  // var hatTumbling = [
+  //   { transform: 'translate3D(-50%, -50%, 0', color: '#000' }, 
+  //   { color: '#431236', offset: 0.7},
+  //   { color: '#000' }
+  // ];
+
+  // var hatTiming = {
+  //   duration: 3000,
+  //   iterations: Infinity
+  // }
+
+  // document.getElementById("hat").animate(
+  //   hatTumbling, 
+  //   hatTiming
+  // )
+
+  const cat = document.querySelector("#cat");   
+  const hat = document.querySelector("#hat");   
+
+    var id = null;
+    var pos = 0;
+    // clearInterval(id);
+    id = setInterval(frame, 10);
+
+    
+ 
+    function frame() {
+      if (pos == 850) {
+        clearInterval(id);
+      } else {
+        pos++;
+        cat.style.top = pos + 'px'; 
+        cat.style.left = pos + 'px'; 
+      }
+    }
+
+    var pos2 = 0;
+    
+    function hatMoves() {
+      if (pos2 == 850) {
+        clearInterval(id);
+      } else {
+        pos2++; 
+        hat.style.right = pos2 + 'px'; 
+      }
+    }
+ 
+
 </script>
