@@ -28,3 +28,9 @@ form.addEventListener("submit", function (event) {
 data.forEach((item) => {
     listMaker(item);
 });
+
+button.addEventListener("click", () => {
+    console.log("clicked");
+    localStorage.removeItem("items", JSON.stringify(itemsArray));
+
+})
