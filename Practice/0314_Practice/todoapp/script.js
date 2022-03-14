@@ -3,7 +3,9 @@ const ul        = document.querySelector("ul");
 const button    = document.querySelector("button");
 const input     = document.getElementById("item");
 
-let itemsArray = localStorage.getItem("items") ? JSON.parse(localStorage.getItem("items")) : [];
+let itemsArray = localStorage.getItem("items")
+? JSON.parse(localStorage.getItem("items"))
+: [];
 
 //saving it locally
 localStorage.setItem("items", JSON.stringify(itemsArray));
@@ -25,12 +27,13 @@ form.addEventListener("submit", function (event) {
     input.value = "";
 });
 
-data.forEach((item) => {
-    listMaker(item);
-});
-
-button.addEventListener("click", () => {
+button.addEventListener("click", function (event) {
+    event.preventDefault();
     console.log("clicked");
     localStorage.removeItem("items", JSON.stringify(itemsArray));
 
-})
+});
+
+data.forEach((item) => {
+    listMaker(item);
+});
