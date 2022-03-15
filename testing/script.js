@@ -45,8 +45,6 @@ window.addEventListener("scroll", () => {
 // let footer = document.querySelector("footer");
 
 // footer.addEventListener("scroll", () => {
-//   let yPosition = footer.scrollY;
-
 //   innerTentacles.style.top = yPosition * 1 + "px";
 //   middleTentacles.style.top = yPosition * 1 + "px";
 //   outerTentacles.style.top = yPosition * 1 + "px";

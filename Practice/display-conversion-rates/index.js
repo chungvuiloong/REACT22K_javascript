@@ -44,13 +44,13 @@ causing a new API request. In order not to exceed your limit, we recommend comme
 fetch/FetchWrapper related code after you get it to work the first time. */
 
 //Notes:
-// Sign up for a free account on exchange https://www.exchangerate-api.com/
+// DONE Sign up for a free account on exchange https://www.exchangerate-api.com/
 // Copy the example request
 // Please check the documentation link, read Standard Requests documentation
 // Sending a GET request to https://v6.exchangerate-api.com/v6/YOUR_API_KEY/latest/USD
 // Above will give you exchange rate comapred to USD
 
-// In index.js, selecr the 2 <select> items as well as the <p> with id conversion-result
+// In index.js, select the 2 <select> items as well as the <p> with id conversion-result
 
 // Create a function called getConversionRates and add a console.log(“New currency selected”) inside of it
 
@@ -61,9 +61,27 @@ fetch/FetchWrapper related code after you get it to work the first time. */
 // https://v6.exchangerate-api.com/v6/27f485a6f4826176bdcb3490/latest/USD
 //
 
-const API = "https://v6.exchangerate-api.com/v6/27f485a6f4826176bdcb3490/latest/USD";
+// #base-currency
+// #target-currency
 
-function getConversionRates {
-  console.log("New currency selected");
-}
+const baseCurrency = document.querySelector("#base-currency"); // The value is always 1
+let results = document.querySelector(".result");
+
+let targetCurrency = document.querySelector("#target-currency"); // Always changing
+
+// baseCurrency.selectedIndex
+const API = new FetchWrapper("https://v6.exchangerate-api.com/v6/27f485a6f4826176bdcb3490/latest/");
+
+function getConversionRates () {
+  API.get(`${baseCurrency.value}`)
+  .then(response => response.json())
+  .then(currency => console.log(currency));
+
+  results.textContent = baseCurrency.value + "New currency selected";
+};
+
+window.addEventListener("onchange", getConversionRates);
+
+
+
 
