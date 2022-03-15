@@ -23,7 +23,7 @@ function getConversionRates () {
     // rounded two decimal places
     conversionResults.textContent = `${rate.toFixed(2)}`;
 
-    //Shows the converted currency rates
+    //Inputted value and converted
     // rounded two decimal places
     secondConversion.textContent = (Number(rate) * input.value).toFixed(2);
   });
