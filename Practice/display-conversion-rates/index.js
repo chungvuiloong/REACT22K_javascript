@@ -18,8 +18,8 @@ function getConversionRates () {
 
     let rate = currency.conversion_rates[targetCurrency.value];
 
-    conversionResults.textContent = `${rate}`;
-    secondConversion.textContent = Number(rate) * input.value;
+    conversionResults.textContent = `${rate.toFixed(2)}`;
+    secondConversion.textContent = Number(rate).toFixed(2) * input.value;
   });
 
 };
