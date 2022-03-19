@@ -20,7 +20,7 @@ function getConversionRates () {
     // rounded two decimal places
     conversionResults.textContent = `${rate.toFixed(2)}`;
 
-    //Inputted value and converted
+    // Inputted value and converted
     // rounded two decimal places
     secondConversion.textContent = (Number(rate) * input.value).toFixed(2);
   });
